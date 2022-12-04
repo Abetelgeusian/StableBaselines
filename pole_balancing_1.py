@@ -1,8 +1,4 @@
 # +
-# Link to the google Collab
-# https://colab.research.google.com/github/araffin/rl-tutorial-jnrr19/blob/sb3/1_getting_started.ipynb#scrollTo=pUWGZp3i9wyf
-
-# +
 # # !pip install gym
 # # !pip show gym
 # !pip install stable-baselines3[extra]
@@ -54,14 +50,14 @@ from stable_baselines3.ppo.policies import MlpPolicy
 
 #     return mean_episode_reward
 
-# env = gym.make('CartPole-v1')
-# model = PPO(MlpPolicy, env, verbose=0)
-# # Random Agent, before training
-# mean_reward_before_train = evaluate(model, num_episodes=100)
-# -
-
 env = gym.make('CartPole-v1')
 model = PPO(MlpPolicy, env, verbose=0)
+# # Random Agent, before training
+# mean_reward_before_train = evaluate(model, num_episodes=100)
+
+# +
+# env = gym.make('CartPole-v1')
+# model = PPO(MlpPolicy, env, verbose=0)
 # # Random Agent, before training
 # mean_reward_before_train = evaluate(model, num_episodes=100)
 
